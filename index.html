@@ -21,7 +21,7 @@ html {
       gridmake.style.width = sizev;
       gridmake.style.height = sizev;
       document.style.
-      gridmake.style.margin = (getComputedStyle().getPropertyValue("") / (numv * sizev));
+      gridmake.style.margin = ((window.getComputedStyle(document.getElementById("gridsv"), null).getPropertyValue("width") * (window.getComputedStyle(document.getElementById("gridsv"), null).getPropertyValue("height"))) / (numv * sizev));
     }
   }
 
