@@ -1,14 +1,18 @@
 <style>
   #gridsv {
-
+width: 100%;
+height: 100%;
   }
 </style>
 <div id="gridsv"></div>
 <script>
-function gridCreation(numv, colv, spacev, sizev) {
+function gridCreation(numv, colv, sizev) {
 for (var i; i < numv; i++) {
   var gridmake = document.getElementById("gridsv").create("span");
   gridmake.classList.add("gridboxv");
+  gridmake.style.width = sizev;
+  gridmake.style.height = sizev;
+  gridmake.style.margin = (totalSizev / (numv * sizev));
 }
 }
 </script>
